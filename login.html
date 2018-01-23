@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Login</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="author" content=""/>
+        <meta name="copyright" content="© ipsum lorem dolor"/>
+        <meta name="description" content=""/>
+        <meta name="keywords" content=""/>
+
+        <!-- PERSONNAL STYLE -->
+        <link rel="stylesheet" href="css/preloader.css" type="text/css"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+
+        <link rel="stylesheet" href="css/jquery-ui.css" type="text/css"/>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+
+        <!-- Gallery using a fluid layout -->
+        <link rel="stylesheet" href="css/fluid-gallery.css" type="text/css"/>
+
+        <!-- Latest compiled and minified CSS Bootstrap 3-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- jquery Framework -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <!-- BaguetteBox library for Gallery -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"/>
+
+        <!-- Adding icon library fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <style type="text/css">
+            @media screen and (max-width: 887px) and (min-width: 0px){
+                label{
+                    margin: 10% !important;
+                }
+            }
+            label{
+                color: #fff;
+                background: #b3b3b3;
+                display: block;
+                margin-bottom: 5%;
+            }
+            .input-block{
+                padding:0;
+                margin: 0;
+            }
+            input{
+                width: 100%;
+                color: #fff;
+                background: #b3b3b3;
+                border: none;
+                padding: 3%;
+                
+            }
+            .icon-block{
+                margin-top: 1%;
+                margin-bottom: 1%;
+                border-right: 2px #fff solid !important;
+            }
+            #redBtn-label{
+                color: #fff;
+                background: #9d0202;
+            }
+        </style>
+    </head>
+    <body onload="preload(75)">
+        <div class="spinner"></div>
+        <header>
+            <div class="row">
+                <div class="col-md-offset-10 col-md-1">
+                    <h3 class="login"><a href="login.html" title="login">Login</a></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div id="logoBlock" class="col-xs-12 col-md-offset-1 col-md-2">
+                    <a href="home.html">
+                        <img src="img/logo.png" title="west court OFFICES" alt="logo of west court OFFICES"/>
+                    </a>
+                </div>
+                <div class="col-md-9 col-sm-12 col-xs-12">
+                    <nav>
+                        <ul class="navigation">
+                            <a href="home.html"><li>HOME</li></a>
+                            <a href="book-tour.html"><li>BOOK A TOUR</li></a>
+                            <a href="faqs.html"><li>FAQ'S</li></a>
+                            <a href="news.html"><li>NEWS</li></a>
+                            <a href="contact.html"><li>CONTACT</li></a>
+                        </ul>
+                        <div class="handle"></div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="overview" class="row">
+            <div id="overviewimg" class="col-md-12 col-xs-12 col-lg-12">
+                <img src="img/overview.png" title="West Court" alt="West Court"/>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
+                <h3 class="paragraphTitle">LOGIN</h3>
+            </div>
+        </div>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-12 col-xs-12">
+                    <form class="row" action="#" method="#">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <label class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-2 icon-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-11 col-xs-10 input-block">
+                                    <input type="text"/>
+                                </div>
+                            </label>
+                            <label class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-2 icon-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-lock"></i>
+                                    </span>
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-11 col-xs-10 input-block">
+                                    <input type="password"/>
+                                </div>
+                            </label>
+                            <label id="redBtn-label" class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <input class="redBtn" type="submit" value="LOGIN"/>
+                                </div>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="footer-left-side">
+                    <ul class="footer-list">
+                        <li class="strong"><a href="#">West Court Offices</a></li>
+                        <li><a href="#">Park Lane</a></li>
+                        <li><a href="#">Allerton Bywater</a></li>
+                        <li><a href="#">Castleford</a></li>
+                        <li><a href="#">WF10 2AT</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="footer-right-side">
+                    <div class="row">
+                        <div class="col-lg-offset-7 col-lg-5 col-md-offset-7 col-md-5 col-sm-8 col-xs-12">
+                                <a href="#" title="Like us on facebook" class="fa fa-facebook"></a>
+                            
+                                <a href="#" title="Follow us on twitter" class="fa fa-twitter"></a>
+                            
+                                <a href="#" title="Follow us on google+" class="fa fa-google-plus"></a>
+                            
+                                <a href="#" title="Follow us on LinkedIn" class="fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-tel-mail">
+                            <div class="row">
+                                <div class="col-md-offset-2 col-md-2 col-sm-12 col-xs-12 contact-detail">
+                                    <span>Tel</span>
+                                </div>
+                                <div class="col-md-8 col-sm-12 col-xs-12 contact-detail">
+                                    <span>01924 668 552</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-offset-2 col-md-2 col-sm-12 col-xs-12 contact-detail">
+                                    <span>Email</span>
+                                </div>
+                                <div class="col-md-8 col-sm-12 col-xs-12 contact-detail">
+                                    <span>info@westcourtoffices.co.uk</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="pull-left footer-copyright">
+                    <p>&copy;2017 Harris Commercial Property Investments LTD</p>
+                </div>
+                <div class="pull-right footer-term">
+                    <a href="#">Term &amp; Conditions |</a>
+                    <a href="#"> Privacy Policy |</a>
+                    <a href="#"> Contact Us</a>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script> 
+        <script>
+            baguetteBox.run('.gallery_photos');
+        </script>
+        <!-- Responsive Navbar -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+        <script src="js/responsiveNav.js" type="text/javascript"></script>
+        <script src="js/preloader.js" type="text/javascript"></script>
+    </body>
+</html>

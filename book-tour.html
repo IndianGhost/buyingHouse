@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>BOOK A TOUR</title>
+        
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content=""/>
+        <meta name="copyright" content="© ipsum lorem dolor"/>
+        <meta name="description" content=""/>
+        <meta name="keywords" content=""/>
+
+        <!-- PERSONNAL STYLE -->
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+
+        <!-- Gallery using a fluid layout -->
+        <link rel="stylesheet" href="css/fluid-gallery.css" type="text/css"/>
+
+        <!-- Latest compiled and minified CSS Bootstrap 3-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- jquery Framework -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Adding icon library fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="row">
+                <div class="col-md-offset-10 col-md-1">
+                    <h3 class="login"><a href="login.html" title="login">Login</a></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div id="logoBlock" class="col-xs-12 col-md-offset-1 col-md-2">
+                    <a href="home.html">
+                        <img src="img/logo.png" title="west court OFFICES" alt="logo of west court OFFICES"/>
+                    </a>
+                </div>
+                <div class="col-md-9 col-sm-12 col-xs-12">
+                    <nav>
+                        <ul class="navigation">
+                            <a href="home.html"><li>HOME</li></a>
+                            <a href="book-tour.html" class="active"><li>BOOK A TOUR</li></a>
+                            <a href="faqs.html"><li>FAQ'S</li></a>
+                            <a href="news.html"><li>NEWS</li></a>
+                            <a href="contact.html"><li>CONTACT</li></a>
+                        </ul>
+                        <div class="handle"></div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="overview" class="row">
+            <div id="overviewimg" class="col-md-12 col-xs-12 col-lg-12">
+                <img src="img/overview.png" title="West Court" alt="West Court"/>
+            </div>
+        </div>
+        <section id="book-tour-intro">
+            <div class="row">
+                <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
+                    <h3 class="paragraphTitle">BOOK A TOUR</h3>
+                    <p>
+                        If you would like to book a tour of West Court Offices, one of our members of staff would be delighted to show you around the facilities and discuss our services in greater detail.
+                    </p>
+                    <br/>
+                    <p>
+                         Please enter your contact information and choose an available date and time from the menu below: 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div id="book-tour-content">
+            <div id="book-tour-form-reservation" class="row">
+                <div class="col-lg-offset-1 col-lg-5 col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10">
+                    <form method="#" action="#">
+                    <legend class="paragraphTitle">ENQUIRE</legend>
+                    <input name="name" type="text" placeholder="Name" class="contactForm-input" required/>
+                    <input name="companyName" type="text" placeholder="Company Name" class="contactForm-input"/>
+                    <input name="phone" type="phone" placeholder="Phone" class="contactForm-input" required/>
+                    <input name="emailAddress" type="phone" placeholder="Email Address" class="contactForm-input" required/>
+                    <center>
+                        <input class="redBtn contactForm-input" type="submit" value="CONFIRM BOOKING"/>
+                    </center>
+                </form>
+                </div>
+            <!-- The begin of left side -->
+                <div class="calendar col-lg-5 col-md-5 col-sm-11 col-xs-11">
+                    <div class="row calendar-head">
+                        <div class="pull-left">
+                            <span class="glyphicon glyphicon-play flip" id="backward-month"></span>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <span id="previous-month"></span>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <span id="month"></span>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <span id="next-month"></span>
+                        </div>
+                        <div class="pull-right">
+                            <span class="glyphicon glyphicon-play" id="forward-month"></span>
+                        </div>
+                    </div>
+                    <div class="row calendar-head">
+                        <div class="pull-left">
+                            <span class="glyphicon glyphicon-play flip" id="backward-day"></span>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <span id="previous-day"></span>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <span id="today"></span>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <span id="next-day"></span>
+                        </div>
+                        <div class="pull-right">
+                            <span class="glyphicon glyphicon-play" id="forward-day"></span>
+                        </div>
+                    </div>
+
+                    <div class="row calendar-row">
+                        <div class="pull-left">
+                            <span class="calendar-hour">08:00am</span>
+                        </div>
+                        <div class="col-lg-9">
+                            <span class="available"></span>
+                        </div>
+                        <div class="pull-right">
+                            <span class="calendar-select">select</span>
+                        </div>
+                    </div>
+
+                    <div class="row calendar-row">
+                        <div class="pull-left">
+                            <span class="calendar-hour">09:00am</span>
+                        </div>
+                        <div class="col-lg-9">
+                            <span class="available"></span>
+                        </div>
+                        <div class="pull-right">
+                            <span class="calendar-select">select</span>
+                        </div>
+                    </div>
+
+                    <div class="row calendar-row">
+                        <div class="pull-left">
+                            <span class="calendar-hour">10:00am</span>
+                        </div>
+                        <div class="col-lg-9">
+                            <span class="unavailable"></span>
+                        </div>
+                        <div class="pull-right">
+                            <span class="calendar-select"></span>
+                        </div>
+                    </div>
+
+                    <div class="row calendar-row">
+                        <div class="pull-left">
+                            <span class="calendar-hour">11:00am</span>
+                        </div>
+                        <div class="col-lg-9">
+                            <span class="available"></span>
+                        </div>
+                        <div class="pull-right">
+                            <span class="calendar-select">select</span>
+                        </div>
+                    </div>
+
+                    <div class="row calendar-row">
+                        <div class="pull-left">
+                            <span class="calendar-hour">12:00pm</span>
+                        </div>
+                        <div class="col-lg-9">
+                            <span class="available"></span>
+                        </div>
+                        <div class="pull-right">
+                            <span class="calendar-select">select</span>
+                        </div>
+                    </div>
+
+                    <div class="row calendar-row">
+                        <div class="pull-left">
+                            <span class="calendar-hour">01:00pm</span>
+                        </div>
+                        <div class="col-lg-9">
+                            <span class="available"></span>
+                        </div>
+                        <div class="pull-right">
+                            <span class="calendar-select">select</span>
+                        </div>
+                    </div>
+
+                    <div class="row calendar-row">
+                        <div class="pull-left">
+                            <span class="calendar-hour">02:00pm</span>
+                        </div>
+                        <div class="col-lg-9">
+                            <span class="available"></span>
+                        </div>
+                        <div class="pull-right">
+                            <span class="calendar-select">select</span>
+                        </div>
+                    </div>
+
+                    <div class="row calendar-row">
+                        <div class="pull-left">
+                            <span class="calendar-hour">03:00pm</span>
+                        </div>
+                        <div class="col-lg-9">
+                            <span class="available"></span>
+                        </div>
+                        <div class="pull-right">
+                            <span class="calendar-select">select</span>
+                        </div>
+                    </div>
+
+                    <div class="row calendar-row">
+                        <div class="pull-left">
+                            <span class="calendar-hour">04:00pm</span>
+                        </div>
+                        <div class="col-lg-9">
+                            <span class="available"></span>
+                        </div>
+                        <div class="pull-right">
+                            <span class="calendar-select">select</span>
+                        </div>
+                    </div>
+
+                    <div class="row calendar-row">
+                        <div class="pull-left">
+                            <span class="calendar-hour">05:00pm</span>
+                        </div>
+                        <div class="col-lg-9">
+                            <span class="available"></span>
+                        </div>
+                        <div class="pull-right">
+                            <span class="calendar-select">select</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
+                    <p>
+                        Alternatively please contact us via telephone or email to arrange an appointment
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-offset-2 col-lg-3 col-md-offset-2 col-md-3 col-sm-offset-1 col-sm-10 col-xs-12">
+                    <span class="tel-span">Tel: 01924 668 552</span>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-offset-1 col-sm-10 col-xs-12">
+                    <span class="email-span">Email: info@westcourtoffices.co.uk</span>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="footer-left-side">
+                    <ul class="footer-list">
+                        <li class="strong"><a href="#">West Court Offices</a></li>
+                        <li><a href="#">Park Lane</a></li>
+                        <li><a href="#">Allerton Bywater</a></li>
+                        <li><a href="#">Castleford</a></li>
+                        <li><a href="#">WF10 2AT</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="footer-right-side">
+                    <div class="row">
+                        <div class="col-lg-offset-7 col-lg-5 col-md-offset-7 col-md-5 col-sm-8 col-xs-12">
+                                <a href="#" title="Like us on facebook" class="fa fa-facebook"></a>
+                            
+                                <a href="#" title="Follow us on twitter" class="fa fa-twitter"></a>
+                            
+                                <a href="#" title="Follow us on google+" class="fa fa-google-plus"></a>
+                            
+                                <a href="#" title="Follow us on LinkedIn" class="fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-tel-mail">
+                            <div class="row">
+                                <div class="col-md-offset-2 col-md-2 col-sm-12 col-xs-12 contact-detail">
+                                    <span>Tel</span>
+                                </div>
+                                <div class="col-md-8 col-sm-12 col-xs-12 contact-detail">
+                                    <span>01924 668 552</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-offset-2 col-md-2 col-sm-12 col-xs-12 contact-detail">
+                                    <span>Email</span>
+                                </div>
+                                <div class="col-md-8 col-sm-12 col-xs-12 contact-detail">
+                                    <span>info@westcourtoffices.co.uk</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="pull-left footer-copyright">
+                    <p>&copy;2017 Harris Commercial Property Investments LTD</p>
+                </div>
+                <div class="pull-right footer-term">
+                    <a href="#">Term &amp; Conditions |</a>
+                    <a href="#"> Privacy Policy |</a>
+                    <a href="#"> Contact Us</a>
+                </div>
+            </div>
+        </footer>
+         <!-- Responsive Navbar -->
+        <script type="text/javascript" src="js/responsiveNav.js" ></script> 
+
+        <!-- The Calendar -->
+        <!-- It's important to keep this order -->
+        <script type="text/javascript" src="js/monthDays.js"></script>
+        <script type="text/javascript" src="js/isLeap.js"></script>
+        <script type="text/javascript" src="js/nextDay.js"></script>
+        <script type="text/javascript" src="js/previousDay.js"></script>
+        <script type="text/javascript" src="js/mycalendar.js"></script>
+        <!-- End Calendar -->
+    </body>
+</html>

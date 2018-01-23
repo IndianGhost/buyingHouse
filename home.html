@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Home</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="author" content=""/>
+        <meta name="copyright" content="© ipsum lorem dolor"/>
+        <meta name="description" content=""/>
+        <meta name="keywords" content=""/>
+
+        <!-- PERSONNAL STYLE -->
+        <link rel="stylesheet" href="css/preloader.css" type="text/css"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+
+        <link rel="stylesheet" href="css/jquery-ui.css" type="text/css"/>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+
+        <!-- Gallery using a fluid layout -->
+        <link rel="stylesheet" href="css/fluid-gallery.css" type="text/css"/>
+
+        <!-- Latest compiled and minified CSS Bootstrap 3-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- jquery Framework -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <!-- BaguetteBox library for Gallery -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"/>
+
+        <!-- Adding icon library fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    </head>
+    <body onload="preload(75)">
+        <div class="spinner"></div>
+        <header>
+            <div class="row">
+                <div class="col-md-offset-10 col-md-1">
+                    <h3 class="login"><a href="login.html" title="login">Login</a></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div id="logoBlock" class="col-xs-12 col-md-offset-1 col-md-2">
+                    <a href="home.html">
+                        <img src="img/logo.png" title="west court OFFICES" alt="logo of west court OFFICES"/>
+                    </a>
+                </div>
+                <div class="col-md-9 col-sm-12 col-xs-12">
+                    <nav>
+                        <ul class="navigation">
+                            <li><a href="home.html">HOME</a></li>
+                            <li><a href="book-tour.html">BOOK A TOUR</a></li>
+                            <li><a href="faqs.html">FAQ'S</a></li>
+                            <li><a href="news.html">NEWS</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                        <div class="handle"></div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="overview" class="row">
+            <div id="overviewimg" class="col-md-12 col-xs-12 col-lg-12">
+                <img src="img/overview.png" title="West Court" alt="West Court"/>
+            </div>
+        </div>
+        <div id="gallery">
+            <div id="gallery_text" class="row">
+                <div class="col-md-offset-1 col-md-10 col-xs-offset-1 col-xs-10">
+                    <h3 class="paragraphTitle">WEST COURT OFFICES</h3>
+                    <p>
+                        West Court Serviced Offices provide businesses with a cost effective and quick way to set up, expand or move office space for any size company.
+                    </p>
+                    <br/>
+                    <p>
+                        Our serviced offices are fully equipped and provide the services and infrastructure you need:
+                    </p>
+                    <br/>
+                    <ul>
+                        <li>Air conditioning that is controlled separately in each room</li>
+                        <li>Manned reception</li>
+                        <li>State of the art phone and internet systems</li>
+                        <li>An image to be proud of</li>
+                    </ul>
+                </div>
+            </div>
+            <section class="row gallery_photos">
+                <div class="col-xs-12 col-sm-12 col-md-3">
+                    <a class="lightbox" href="img/home_gallery/chair.png">
+                        <img src="img/home_gallery/chair.png" alt="Chair">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5">
+                    <a class="lightbox" href="img/home_gallery/meeting.png">
+                        <img src="img/home_gallery/meeting.png" alt="Meeting">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <a class="lightbox" href="img/home_gallery/workplace.png">
+                        <img src="img/home_gallery/workplace.png" alt="Workplace">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-5">
+                    <a class="lightbox" href="img/home_gallery/tvroom.png">
+                        <img src="img/home_gallery/tvroom.png" alt="TV Room">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <a class="lightbox" href="img/home_gallery/reception.png">
+                        <img src="img/home_gallery/reception.png" alt="Reception">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5">
+                    <a class="lightbox" href="img/home_gallery/gardensitting.png">
+                        <img src="img/home_gallery/gardensitting.png" alt="Garden Sitting">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <div id="features">
+            <div class="row">
+                <h3 class="paragraphTitle">FEATURES</h3>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-offset-2 col-md-5 col-sm-offset-2 col-sm-5">
+                    <ul class="feature-list">
+                        <li>1500 SQFT OF OFFICE SPACE</li>
+                        <li>24 HOURS ACCESS</li>
+                        <li>FREE ON SITE PARKING</li>
+                        <li>KITCHEN FACILITIES</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-5 col-sm-5">
+                    <ul class="feature-list">
+                        <li>MEETING ROOM</li>
+                        <li>SHOWER FACILITIES</li>
+                        <li>BREAK OUT SPACES</li>
+                        <li>HIGH SPEED INTERNET</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="testimonials">
+            <div class="row">
+                <h3 class="paragraphTitle">TESTIMONIALS</h3>
+            </div>
+            <div class="row">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <!-- <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li> -->
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active row">
+                            <img class="col-xs-12 col-md-offset-2 col-md-3 col-sm-offset-2 col-sm-3" src="img/burbridge_logo.png" alt="Burbridge Home Logo"/>
+                            <div class="col-xs-offset-1 col-xs-10 col-md-5 col-sm-5">
+                                <h1 id="adrianHarris">Adrian Harris - Burbridge Homes</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="location">
+            <div class="row">
+                <h3 class="paragraphTitle">LOCATION</h3>
+            </div>
+            <div class="row">
+                <div id="map">
+                    <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
+                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;q=Allerton+Bywater,+Castleford,+Royaume-Uni&amp;t=m&amp;z=10&amp;output=embed"></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10">
+                    <p>
+                        With great connections to the M1 and M62 motorways, you are only a short drive from Leeds City Centre, whilst on the right path to other cities such as Manchester &amp; Liverpool.
+                    </p>
+                    <br/>
+                    <p>
+                        For public transport users, there is a bus stop within 1 minute's walk on the same road as the offices. The buses run regularly within morning and evening commute times, with buses on the hour throughout the day to various locations throughout West Yorkshire.
+                    </p>
+                    <br/>
+                    <p>
+                        In Castleford, located only 10 minutes from West Court Offices, there is a train station with great connections to surrounding towns and cities.
+                    </p>
+                </div>
+            </div>
+            <div id="transportBlock"class="row">
+                <!-- the BEGIN of the left side -->
+                <div class="col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2 col-xs-5">
+                            <center>
+                                <img class="transportImg" src="img/icons/car.png"/>
+                            </center>
+                        </div>
+                        <div class="col-md-offset-1 col-md-9 col-sm-offset-1 col-sm-9 col-xs-offset-1 col-xs-6">
+                            <h6 class="transportText">3.9 MILES TO M1 MOTORWAY</h6>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2 col-xs-5">
+                            <center>    
+                                <img class="transportImg" src="img/icons/car.png"/>
+                            </center>
+                        </div>
+                        <div class="col-md-offset-1 col-md-9 col-sm-offset-1 col-sm-9 col-xs-offset-1 col-xs-6">
+                            <h6 class="transportText">3.5 MILES TO A1 MOTORWAY</h6>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2 col-xs-5">
+                            <center>
+                                <img class="transportImg" src="img/icons/train.png"/>
+                            </center>
+                        </div>
+                        <div class="col-md-offset-1 col-md-9 col-sm-offset-1 col-sm-9 col-xs-offset-1 col-xs-6">
+                            <h6 class="transportText">2hr 23m MINUTES TO LONDON BY TRAIN</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- the BEGIN of right side -->
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2 col-xs-5">
+                            <center>
+                                <img class="transportImg" src="img/icons/car.png"/>
+                            </center>
+                        </div>
+                        <div class="col-md-offset-1 col-md-9 col-sm-offset-1 col-sm-9 col-xs-offset-1 col-xs-6">
+                            <h6 class="transportText">2.9 MILES TO M62 MOTORWAY</h6>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2 col-xs-5">
+                            <center>    
+                                <img class="transportImg" src="img/icons/plane.png"/>
+                            </center>
+                        </div>
+                        <div class="col-md-offset-1 col-md-9 col-sm-offset-1 col-sm-9 col-xs-offset-1 col-xs-6">
+                            <h6 class="transportText">14.7 MILES TO LEEDS BRADFORF AIRPORT</h6>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2 col-xs-5">
+                            <center>
+                                <img class="transportImg" src="img/icons/bus.png"/>
+                            </center>
+                        </div>
+                        <div class="col-md-offset-1 col-md-9 col-sm-offset-1 col-sm-9 col-xs-offset-1 col-xs-6">
+                            <h6 class="transportText">1 MINUTE WALK TO BUS STOP</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <br/>
+        <!-- this section contain only the button that allows to download the brochure -->
+        <section id="downloadSection">
+            <div class="row">
+                <div class="col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 col-xs-offset-2 col-xs-8">
+                    <a class="redBtn" href="#" title="DOWNLOAD OUR BROCHURE">
+                        DOWNLOAD OUR BROCHURE
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="contactForm">
+            <div class="row">
+                <form method="#" action="#" class="col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 col-xs-offset-1 col-xs-10">
+                    <legend class="paragraphTitle">ENQUIRE</legend>
+                    <input name="name" type="text" placeholder="Name" class="contactForm-input" required/>
+                    <input name="companyName" type="text" placeholder="Company Name" class="contactForm-input"/>
+                    <input name="phone" type="phone" placeholder="Phone" class="contactForm-input" required/>
+                    <input name="emailAddress" type="phone" placeholder="Email Address" class="contactForm-input" required/>
+                    <center>
+                        <input class="redBtn contactForm-input" type="submit" value="CONFIRM"/>
+                    </center>
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="footer-left-side">
+                    <ul class="footer-list">
+                        <li class="strong"><a href="#">West Court Offices</a></li>
+                        <li><a href="#">Park Lane</a></li>
+                        <li><a href="#">Allerton Bywater</a></li>
+                        <li><a href="#">Castleford</a></li>
+                        <li><a href="#">WF10 2AT</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="footer-right-side">
+                    <div class="row">
+                        <div class="col-lg-offset-7 col-lg-5 col-md-offset-7 col-md-5 col-sm-8 col-xs-12">
+                                <a href="#" title="Like us on facebook" class="fa fa-facebook"></a>
+                            
+                                <a href="#" title="Follow us on twitter" class="fa fa-twitter"></a>
+                            
+                                <a href="#" title="Follow us on google+" class="fa fa-google-plus"></a>
+                            
+                                <a href="#" title="Follow us on LinkedIn" class="fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-tel-mail">
+                            <div class="row">
+                                <div class="col-md-offset-2 col-md-2 col-sm-12 col-xs-12 contact-detail">
+                                    <span>Tel</span>
+                                </div>
+                                <div class="col-md-8 col-sm-12 col-xs-12 contact-detail">
+                                    <span>01924 668 552</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-offset-2 col-md-2 col-sm-12 col-xs-12 contact-detail">
+                                    <span>Email</span>
+                                </div>
+                                <div class="col-md-8 col-sm-12 col-xs-12 contact-detail">
+                                    <span>info@westcourtoffices.co.uk</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="pull-left footer-copyright">
+                    <p>&copy;2017 Harris Commercial Property Investments LTD</p>
+                </div>
+                <div class="pull-right footer-term">
+                    <a href="#">Term &amp; Conditions |</a>
+                    <a href="#"> Privacy Policy |</a>
+                    <a href="#"> Contact Us</a>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script> 
+        <script>
+            baguetteBox.run('.gallery_photos');
+        </script>
+        <!-- Responsive Navbar -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> 
+        <script src="js/responsiveNav.js" type="text/javascript"></script>
+        <script src="js/preloader.js" type="text/javascript"></script>
+    </body>
+</html>

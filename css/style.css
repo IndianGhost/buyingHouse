@@ -1,0 +1,517 @@
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url('../fonts/gotham_bold/gotham-bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/gotham_bold/gotham-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/gotham_bold/gotham-bold.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/gotham_bold/gotham-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/gotham_bold/gotham-bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: 700;
+   font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url('../fonts/gotham_medium/gotham-medium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/gotham_medium/gotham-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/gotham_medium/gotham-medium.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/gotham_medium/gotham-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/gotham_medium/gotham-medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: 400;
+   font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url('../fonts/avenir_book/avenir-book.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/avenir_book/avenir-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/avenir_book/avenir-book.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/avenir_book/avenir-book.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/avenir_book/avenir-book.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: 700;
+   font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir-Heavy';
+  src: url('../fonts/avenir_heavy/avenir-heavy.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/avenir_heavy/avenir-heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/avenir_heavy/avenir-heavy.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/avenir_heavy/avenir-heavy.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/avenir_heavy/avenir-heavy.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: 700;
+   font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: url('../fonts/avenir_medium/avenir-medium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/avenir_medium/avenir-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/avenir_medium/avenir-medium.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/avenir_medium/avenir-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/avenir_medium/avenir-medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: 400;
+   font-style: normal;
+}
+html, body{
+    font-family: 'Gotham-Medium';
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+} 
+header{
+    color: #7a7a7a;
+}
+header .active{
+    font-weight: bold;
+}
+header .login{
+    font: 1em 'Avenir-Medium';
+    color:  #7a7a7a;
+}
+#overviewimg{
+    margin: auto;
+    display: inline-block;
+}
+#overviewimg img{
+    width: 100%;
+}
+.navigation{
+    overflow: hidden;
+    -webkit-transition: max-height 0.4s;
+    -ms-transition: max-height 0.4s;
+    -moz-transition: max-height 0.4s;
+    -o-transition: max-height 0.4s;
+    transition: max-height 0.4s;
+}
+.navigation li{
+    font: 1.2em 'Gotham-Medium';
+    color:  #7a7a7a;
+    list-style: none;
+    padding-top: 2%;
+    padding-right: 6%; 
+    font-size: 1.75em;
+    display: inline-block;
+}
+.handle{
+    color: #333333;
+    background: #7a7a7a;
+    width: 100%;
+    padding: 2%;
+    display: none;
+}
+
+/* For small devices (e.g tablets) */
+@media screen and (max-width: 862px){
+    .navigation li{
+        list-style: none;
+        padding: 10px;
+        margin: 0 !important;
+        width: 100%;
+        font-size: 1.75em;
+        box-sizing: border-box;
+        background-color: #e6e6e6;
+        text-align: center;
+    }
+    .navigation li:hover{
+        background-color: #b3b3b3;
+        color: #fff;
+    }
+    .navigation{
+        margin: 0px !important;
+        padding: 0;
+        max-height: 0;
+    }
+    .handle:before {
+        content:'Menu';
+        font-size: xx-large;
+        padding: 2%;
+    }
+    .handle{
+        color: white;
+        text-align: center;
+        display: block;
+        cursor: pointer;
+    }
+    .showing{
+        max-height: 100% !important;
+    }
+    .active{
+        color: #333333;
+    }
+    .contactForm-input[type='submit']{
+        width: 100% !important;
+    }
+}
+header a{
+    text-decoration: none;
+    color: #7a7a7a;
+}
+header a:hover, header a:focus{
+    text-decoration: none;
+    color: #b3b3b3;
+}
+.paragraphTitle{
+    margin: auto;
+    text-align: center;
+    color: #9d0202;
+    font: 2em 'Gotham-Bold' !important;
+    padding: 3%; 
+    border-bottom: none;
+}
+#location p{
+    font-size: x-large;
+    color: #7a7a7a;
+    font-family: 'Avenir-Book';
+}
+#gallery_text{
+    color:  #7a7a7a;
+    font:  1.5em 'Avenir-Book' !important;
+}
+#feature{
+    font: 1.5em 'Gotham-Medium' !important;
+    color: #7a7a7a;
+}
+#gallery_text, #features{
+    margin-bottom: 2%;
+}
+.feature-list{
+    font: 1.5em 'Gotham-Medium' !important;
+    color: #7a7a7a;
+}
+#adrianHarris{
+    color: #0d7ca3;
+    font-style: italic;
+    padding: 2%;
+}
+.carousel-inner p, #adrianHarris{
+    font-family: 'Avenir-Book';
+}
+.carousel-inner p{
+    font-size: large;
+}
+.carousel-inner{
+    background-color: #f8f8f8;
+}
+#map {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 2%;
+}
+/* #location li{
+    list-style: none;
+    margin-bottom: 15%;
+} */
+.transportText{
+    color: #9d0202;
+    font-size: 2em;
+}
+#transportBlock{
+     margin: 5% 0; 
+}
+.transportImg{
+     width: 100%;
+    height: 100%;
+}
+@media  screen and (min-width: 360px) and (max-width: 760px){
+    .transportImg{
+        width: 60%;
+        height: 60%;
+    }
+}
+.redBtn, .redBtn:focus, .redBtn:active, .redBtn:visited{
+    text-decoration: none;
+    background-color: #9d0202;
+    color: #ffffff !important;
+    width: 100%;
+    padding: 5%;
+    font: 1.5em 'Avenir-Heavy' !important;
+    display: inline-block;
+    text-align: center;
+    word-wrap: break-word;
+}
+.redBtn:hover{
+    text-decoration: none;
+    opacity: 0.75;
+}
+#downloadSection{
+    margin: 3% 0;
+}
+.contactForm{
+    margin: 5% 0;
+}
+.contactForm-input{
+    width: 100%;
+    margin: 3% 0;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid #b3b3b3;
+    font: 1.5em 'Avenir-Book';
+    padding: 3% 0;
+    color: #7a7a7a;
+}
+.contactForm-input[type='submit']{
+    width: 75%;
+}
+.footer{
+    font: 1.5em 'Avenir-Medium' !important;
+    background-color: #0d7ca3;
+    color: white !important;
+    padding: 2%;
+}
+.footer a{
+    color: white;
+}
+.footer-list{
+    list-style: none;
+}
+.footer-list a:hover{
+    opacity: 0.8;
+    color: white;
+}
+.footer-list a:hover, .footer-list a:visited, .footer-list a:focus, .footer-list a:active{
+    text-decoration: none;
+}
+.footer-tel-mail{
+      margin-top: 5%;  
+}
+.contact-detail{
+    display: inline-block;
+}
+.footer-copyright, .footer-term{
+    padding: 0 5%;
+}
+.footer-term a:hover{
+    opacity: 0.8;
+    text-decoration: none;
+    color: white;
+}
+.footer-right-side, .footer-left-side{
+    display: inline-block;
+}
+.contact-detail{
+    word-wrap: break-word;
+}
+.fa {
+    margin-top: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    text-decoration: none;
+    border-radius: 50%;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+/* Social media icons */
+.fa-twitter, .fa-facebook, .fa-google-plus, .fa-linkedin {
+    background: #fff !important;
+    color: #0d7ca3 !important;
+}
+#book-tour-intro, #book-tour-content p, .email-span, .tel-span, .content p{
+    text-align: center;
+    font-size: x-large;
+    color: #7a7a7a; 
+}
+#book-tour-intro p, #book-tour-content p, .email-span, .tel-span, .content p{
+    line-height: 2em;
+}
+ .tel-span, .email-span{
+    word-wrap: break-word;
+} 
+.content, #book-tour-content, #book-tour-form-reservation{
+    margin: 2% 0;
+}
+.container{
+     margin-bottom: 2%;
+} 
+.title-faqs{
+    text-align: left;
+}
+.question-row{
+    padding: 1% 0%;
+    color: #9d0202;
+    background: #e6e6e6;
+    font: 1.4em 'Avenir-Heavy';
+    margin-top: 2%;
+}
+.answer-row{
+    background: rgb(242, 242, 242);
+    font-family: 'Gotham-Medium';
+    font-size: large;
+    padding: 1% 0;
+    display: none;
+}
+.glyphicon-menu-down:hover{
+    cursor: pointer;
+}
+
+.news-card{
+    font-family: 'Gotham-Bold';
+    margin-bottom: 2%;
+}
+.news-card img{
+    width: 100%;
+}
+.newsDescription{
+    background: rgb(242, 242, 242);
+    width: 100%;
+    padding: 3%;
+    height: 175px;
+}
+.newsDescription h6{
+    font: 0.8em 'Avenir-Heavy';
+    color: #9d0202;
+}
+.newsDescription p{
+    font: 1.54em 'Avenir-Heavy';
+    color: #0d7ca3;
+}
+.blueBtn, .blueBtn:focus, .blueBtn:active, .blueBtn:visited{
+    color: white;
+    text-decoration: none;
+    background-color: #0d7ca3;
+    width: 100%;
+    padding: 5%;
+    font: 1.2em 'Avenir-Heavy';
+    display: inline-block;
+    text-align: center;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+.blueBtn:hover{
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.flip{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+.glyphicon-play{
+    color: #0d7ca3;
+    font-size: xx-large;
+}
+.glyphicon-play:hover{
+    cursor: pointer;
+    opacity: 0.75;
+}
+.calendar{
+    font-family: 'Gotham-Bold';
+    background: #e6e6e6;
+    border: 2px solid #b3b3b3;
+    margin: 2% 2% !important;
+    text-align: center;
+}
+.calendar-head{
+    padding: 2% 4%;
+    border-bottom: 2px solid #b3b3b3;
+}
+.calendar-row{
+    padding: 2% 4%;
+    border-bottom: 1px outset #eee;
+}
+.available::before{
+    content: 'Available';
+}
+.available{
+    color: #0da050;
+}
+.unavailable::before{
+    content: 'Unavailable';
+}
+.unavailable{
+    color: #9d0202;
+}
+#month, #today{
+    color: #9d0202;
+    font-family: 'Gotham-Bold';
+    font-size: x-large;
+}
+#previous-month, #next-month, #previous-day, #next-day{
+    color: #9d0202;
+    opacity: 0.7;
+    font-size: large;
+}
+.calendar-hour, .calendar-select{
+    color: #7a7a7a;
+}
+.calendar-select:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+#form-contact-page .contactForm-input{
+    margin: 1% 0 !important;
+}
+@media screen and (min-width: 0px) and (max-width: 768px){
+    #form-contact-page{
+        margin-left: 2% !important;
+        margin-right: 2% !important;
+    }
+    #form-contact-page .contactForm-input{
+        width: 100% !important;
+    }
+    #form-contact-page .contactForm-input[type='submit'] {
+        width: 75% !important;
+    }
+}
+#contact-page-right{
+    font: 1.5em 'Avenir-Medium';
+    color: #7a7a7a;
+}
+.strong{
+    font: 1.5em 'Avenir-Heavy' !important;
+}
+.west-court-list{
+    color:  #7a7a7a;
+    font: 1.5em 'Avenir-Medium' !important;
+}
+#contact-page-right .west-court-list,
+#contact-page-right .pull-left
+{
+    /* margin: 2% 0 !important; */
+     padding: 0 !important; 
+}
+#contact-page-right .tel, #contact-page-right .email{
+    word-wrap: break-word;
+}
+#contact-page-right a, #contact-page-right a:visited, #contact-page-right a:focus, #contact-page-right a:active{
+    color: inherit;
+    text-decoration: none;
+}
+#contact-page-right a:hover{
+    opacity: 0.8;
+}
+#contact-page-right li{
+    list-style: none;
+}
+#contact-page-right .fa{
+    margin: 0;
+    padding: 0;
+}
+
+#contact-page-right .fa-twitter,
+#contact-page-right .fa-facebook,
+#contact-page-right .fa-google-plus,
+#contact-page-right .fa-linkedin
+{
+    color: #fff !important;
+    background: #0d7ca3 !important;
+    font-size: medium;
+}
+
+#contact-page-right .row{
+     margin: 3% 0; 
+}
+
+#contact-page-right .redBtn{
+    color: white !important;
+}
+
+.faqs-content p{
+    font: 1.5em 'Avenir-Book';
+    text-align: center;
+    padding: 1%;
+}
